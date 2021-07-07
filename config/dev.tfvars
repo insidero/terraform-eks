@@ -18,8 +18,8 @@ key_name          = "dev-eks"
 
 enable_kubectl               = true
 enable_dashboard             = true
-enable_kube2iam              = true
-enable_ambassador            = true
+# enable_kube2iam              = true
+# enable_ambassador            = true
 
 # nginx_ingress = {
 #   version   = "0.25.1"

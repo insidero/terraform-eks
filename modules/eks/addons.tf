@@ -12,7 +12,7 @@ resource "local_file" "eks_admin" {
 }
 
 resource "null_resource" "dashboard" {
-  depends_on = [ null_resource.autoscaler ]
+  depends_on = [ null_resource.wait_for_cluster[0] ]
   count = var.enable_dashboard ? 1 : 0
 
   provisioner "local-exec" {
